@@ -1,19 +1,20 @@
 @charset "UTF-8";
 
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+/* Variáveis de fonte */
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
 
+/* Reset */
 * {
-    margin: 0px;
-    padding: 0px;
-    
+    margin: 0;
+    padding: 0;
 }
 
 html body {
@@ -21,23 +22,26 @@ html body {
     background-color: darkgrey;
     font-family: var(--fonte1);
 }
-header{
+
+/* Cabeçalho */
+header {
     background-color: black;
     color: white;
     text-align: center;
 }
+
 header > h1 {
     padding-top: 50px;  
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 3.5em;
 }
+
 header > p {
-    padding-top: 50px;
-    
-    
+    padding-top: 20px;
 }
- header a, footer a {
+
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
@@ -46,47 +50,58 @@ header > p {
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
+
+/* Seções */
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-
 }
+
 section > p {
     padding: 2em;
 }
+
+/* Seção normal */
 section.normal {
     background-color: white;
     color: black;
 }
-section.image {
+
+/* Seção de imagem */
+section.imagem {
     background-color: rgb(37, 37, 37);
     color: white;
     box-shadow: inset 6px 6px 13px 0px black;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
-section.image > p {
+
+section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(5, 5, 5, 0.39);
     text-shadow: 1px 1px 0px black;
 }
-section#image01 {
-    background-image: url(../ativi012/imagens/background001.jpg);
-    background-position: right, center;
 
+/* Imagem 1 */
+section#image01 {
+    background-image: url('./imagens/background001.jpg');
 }
+
+/* Imagem 2 */
 section#image02 {
-    background-image: url(../ativi012/imagens/background002.jpg);
-    background-position: right bottom;
-   
+    background-image: url('./imagens/background002.jpg');
 }
+
+/* Rodapé */
 footer {
     background-color: black;
     text-align: center;
     color: white;
     padding: 10px;
 }
+
